@@ -55,8 +55,8 @@ class RickAndMortyService {
     //     "firstSeen": "Earth",
     //     "location": "Earth",
     //     "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
-    //     "student": "aqui va el nombre del estudiante",
-    //     "code": "aqui va el codigo del estudiante"
+    //     "student": "Carlos Santiago Piza Choachi",
+    //     "code": "0000227586"
     // }
 
     // deberá realizar el respectivo manejo de error en caso de errores al llamar el API
