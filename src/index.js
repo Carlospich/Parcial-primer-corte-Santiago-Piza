@@ -1,4 +1,4 @@
-import {RickAndMortyService} from './service.js';
+import RickAndMortyService from './service.js';
 
 const characterList = document.getElementById("character-list");
 const service = new RickAndMortyService();
@@ -38,17 +38,12 @@ function createCharacterList() {
             characterList.innerHTML = characterCards.join('');
             addCharacterListeners();
         })
-        .catch(error => console.error("Error fetching data", error));
 }
 
-function addCharacterListeners() {
-    const characterCards = document.querySelectorAll('.character');
-
-    characterCards.forEach(card => {
-        card.addEventListener('click', event => {
-            const characterName = event.currentTarget.querySelector('h2').textContent;
-            alert(`Hola, soy ${characterName}`);
-        });
+function addCharacterListeners(character) {
+    const characterElement = document.querySelector(`#${character.id}`);
+    characterElement.addEventListener('click', () => {
+        console.log(`Hola, soy ${character.name}`);
     });
 }
 

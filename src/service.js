@@ -1,4 +1,4 @@
-export class RickAndMortyService {
+class RickAndMortyService {
     constructor() {
         this.url = 'https://rickandmortyapi.com/api/';
     }
@@ -14,7 +14,9 @@ export class RickAndMortyService {
                 species: character.species,
                 firstSeen: character.origin.name,
                 location: character.location.name,
-                image: character.image
+                image: character.image,
+                student: "Carlos Santiago Piza Choachi",
+                code: "0000227586",
             }));
 
             return characters;
@@ -23,3 +25,5 @@ export class RickAndMortyService {
         }
     }
 }
+
+export default RickAndMortyService;
