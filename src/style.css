@@ -95,3 +95,20 @@ body{
     color: var(--primary-font-color);
     font-size: 18px;
 }
+
+.imagen{
+    width: auto;
+    height: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+img{
+   
+        width: auto;
+        height: 100%;
+        border-radius: 0.5rem 0 0 0.5rem;
+    
+}
+
+h1{
+    text-align: center;
+}
